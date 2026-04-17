@@ -1,0 +1,304 @@
+.taxi-hero {
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.taxi-hero-fade {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(26,26,26,0.8) 70%, rgba(26,26,26,1) 100%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.taxi-hero-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    margin-bottom: 10px;
+}
+
+.taxi-hero-accent {
+    width: 120px;
+    height: 4px;
+    background-color: #DAA520;
+    margin: 15px auto 20px;
+    border-radius: 999px;
+}
+
+.taxi-hero-sub {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+    color: #ddd;
+}
+
+.rentals-container {
+    background-color: #1a1a1a;
+    padding: 20px 20px 60px 20px;
+    color: white;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+.search-form-container { 
+    max-width: 700px; 
+    margin: 0 auto; 
+    background: #222; 
+    padding: 30px; 
+    border-radius: 12px; 
+    border: 1px solid #DAA520; 
+}
+
+.search-form { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+}
+
+.form-group label { 
+    display: block; 
+    margin-bottom: 8px; 
+    color: #DAA520; 
+}
+
+.date-input { 
+    width: 100%; 
+    height: 48px; 
+    padding: 10px; 
+    border-radius: 5px; 
+    border: 1px solid #444; 
+    background: #333; 
+    color: white; 
+    box-sizing: border-box; 
+    font-size: 1rem;
+    display: block;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.date-input:focus {
+    border-color: #DAA520;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(218, 165, 32, 0.25); 
+}
+
+
+.search-button-wrapper { grid-column: span 2; margin-top: 10px; }
+
+.search-submit-btn { 
+    width: 100%; 
+    padding: 12px; 
+    background: #DAA520; 
+    color: #1a1a1a;
+    border: none; 
+    border-radius: 6px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(218, 165, 32, 0.2);
+}
+
+.search-submit-btn:hover { 
+    background: #b8860b; 
+    color: #1a1a1a;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(218, 165, 32, 0.4);
+}
+
+.filter-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.category-filter {
+    appearance: none; 
+    background-color: #222;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23DAA520%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 0.65em auto;
+    color: #DAA520;
+    border: 1px solid #DAA520;
+    padding: 10px 40px 10px 15px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    min-width: 200px;
+    transition: all 0.3s ease;
+}
+
+.category-filter:hover {
+    background-color: #2a2a2a;
+    box-shadow: 0 0 10px rgba(218, 165, 32, 0.2);
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.car-card {
+    background: #252525; 
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.car-card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.car-image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: none !important; 
+    margin: 0 !important; 
+    border-radius: 0; 
+    background-color: #252525;
+}
+
+.car-image {
+    width: 100%;
+    height: auto; 
+    max-height: 250px;
+    object-fit: contain;
+    display: block;
+}
+
+.car-details { 
+    padding: 20px; 
+    background: #252525; 
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.car-title { 
+    color: #DAA520; 
+    margin-bottom: 15px; 
+    font-size: 1.25rem;
+    font-weight: 600;
+    min-height: 3rem; 
+    line-height: 1.4;
+    overflow: visible; 
+}
+
+.car-footer { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    border-top: 1px solid #444; 
+    padding-top: 15px; 
+    margin-top: auto; 
+}
+
+.car-price { font-weight: bold; font-size: 1.2rem; }
+
+.book-now-btn { 
+    background: none; 
+    border: 1px solid #DAA520; 
+    color: #DAA520; 
+    padding: 5px 15px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: 0.3s; 
+}
+
+.book-now-btn:hover { 
+    background: #DAA520; 
+    color: black; 
+}
+
+.or-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 700px;
+    color: #DAA520;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.or-divider::before,
+.or-divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #444;
+}
+
+.or-divider::before {
+    margin-right: 15px;
+}
+
+.or-divider::after {
+    margin-left: 15px;
+}
+
+.quick-call-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.quick-call-container p {
+    color: #bbb;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.quick-call-number {
+    display: inline-flex;
+    align-items: center;
+    background-color: #DAA520;
+    color: #1a1a1a;
+    padding: 12px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(218, 165, 32, 0.2);
+}
+
+.quick-call-number:hover {
+    background-color: #b8860b;
+    color: #1a1a1a;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(218, 165, 32, 0.4);
+}
+
+.quick-call-number i {
+    margin-right: 12px;
+    font-size: 1.3rem; 
+}
+
+@media (max-width: 768px) {
+  .taxi-hero-title {
+    font-size: 2rem;
+  }
+  .taxi-hero-sub {
+    font-size: 1rem;
+  }
+}
