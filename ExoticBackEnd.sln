@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExoticBackend", "ExoticBackend\ExoticBackend.csproj", "{F4B924A1-4EC3-467F-BF8C-570F9BAB1FDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExoticBackend.Tests", "ExoticBackend.Tests\ExoticBackend.Tests.csproj", "{2082C006-C905-481C-A56F-AD97992E7851}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4B924A1-4EC3-467F-BF8C-570F9BAB1FDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4B924A1-4EC3-467F-BF8C-570F9BAB1FDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4B924A1-4EC3-467F-BF8C-570F9BAB1FDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4B924A1-4EC3-467F-BF8C-570F9BAB1FDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2082C006-C905-481C-A56F-AD97992E7851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2082C006-C905-481C-A56F-AD97992E7851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2082C006-C905-481C-A56F-AD97992E7851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2082C006-C905-481C-A56F-AD97992E7851}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5832A9A4-9414-4557-9D22-0CB9CED4E0BE}
+	EndGlobalSection
+EndGlobal
