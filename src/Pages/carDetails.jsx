@@ -38,7 +38,6 @@ const CarDetails = () => {
                 const response = await axios.get(`https://localhost:7065/api/vehicles/${id}`);
                 setCarDetails(response.data);
                 
-                // Kezdő kép beállítása (elsődleges keresése)
                 if (response.data.images && response.data.images.length > 0) {
                     const primaryIdx = response.data.images.findIndex(img => img.isPrimary);
                     setCurrentImageIndex(primaryIdx !== -1 ? primaryIdx : 0);
