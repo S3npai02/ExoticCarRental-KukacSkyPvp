@@ -118,7 +118,6 @@ const BookTaxi = () => {
                             <hr />
                             <div className="driver-selection">
                                 <label>Válasszon sofőrt (Benne van az árban)</label>
-                                {/* 3. Map over the REAL drivers */}
                                 <select 
                                     value={selectedDriverId} 
                                     onChange={(e) => setSelectedDriverId(e.target.value)} 
